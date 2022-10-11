@@ -1,0 +1,50 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <mat-card>
+                <mat-card-header>
+                   
+                    <mat-card-title>Read the Instructions Of This page Carefully</mat-card-title>
+                    <mat-card-subtitle>One Step more To Go</mat-card-subtitle>
+                </mat-card-header>
+
+
+                <mat-card-content>
+                    <h1>{{quiz.title}}</h1>
+                    <p>{{quiz.description}}</p>
+                    <mat-divider></mat-divider>
+                    <br />
+                    <h1>Important Instractions</h1>
+
+                    <ul>
+                        <li>This Quiz Is Only For Practice Purpose.</li>
+                        <li>You Have To Submit Quiz With in Time. <p>{{quiz.numberOfQuestion*2}}.</p></li>
+                        <li>You Can attempet The Quiz Any Number Of Time.</li>
+                        <li>Ther Are <p>{{quiz.numberOfQuestion}}</p>  Questions In The Quiz.</li>
+                        <li>All Question In  Of Msq Types.</li>
+                    </ul>
+                    <mat-divider></mat-divider>
+                    <br/>
+                    <h1>Attempeting Quiz</h1>
+                    
+                    <ul>
+                        <li>Click <b>Start Quiz </b> Button To Start the  quiz .</li>
+                        <li>The Time Will Start The moment You Click The Start Button</li>
+                        <li>You Can Not Resue this Quiz,If Interrupted due Any Reason.</li>
+                        <li>scroll Down To Move The Next Question </li>
+                        <li>Click On Submit Button To Completion The Test.</li>
+                    </ul>
+
+                </mat-card-content >
+               
+
+                <mat-card-actions class="text-center">
+                    <button mat-raised-button color="accent" (click)="startQuiz()">Start Quiz</button>
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
+    </div>
+    </div>
+</div>
